@@ -14,7 +14,7 @@ To connect from a terminal, type ```telnet [server.ip.addr.ess] [portNum]``` or 
 * ```TelnetServer```: The main() entry point into the telnet server. Creates a MultiThreadedServer thread.
 * ```MultiThreadedServer```: Starts listening on the specified port for new connections. Creates new Client objects for each connection. 
 * ```Client```: Main class to interface with a client. Contains method stubs for handling new connections, disconnects, and receiving/sending text. This will be your direct way to interface with clients.
-* ```ClientRunnable```: Parent class for Client, contains 
+* ```ClientRunnable```: Parent class for Client, allows for multiple clients to connect at a time.
 
 
 ### Prerequisites
@@ -37,4 +37,4 @@ Git should be used for versioning in this project.
 
 ## Authors
 
-* **Chandler Severson** - Initial work - [Repo](https://github.com/chandl/telnet-starter)
+* **Chandler Severson** - Initial work
